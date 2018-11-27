@@ -4,7 +4,9 @@
 using namespace std;
 
 //prototypes:
-
+void fillWith(vector <int> prog, int ninety );
+bool isPositive(int x);
+void printVector(vector <int>);
 
 /////DO NOT TOUCH/////
 int main()
@@ -42,3 +44,28 @@ int main()
 }
 
 //function definitions
+void fillWith(vector <int> &prog, int ninety )
+{
+for(int col=0 ; col< prog.size() ; col++)
+   {
+       prog[col]=ninety;
+   }  
+  return;
+}
+
+bool isPositive(int x) 
+{
+if (x>0)
+ {return true;} 
+}
+
+
+
+
+ void printvector(vector <int> &prog)
+{ for(int col=0 ; col< prog.size() ; col++)
+     {   
+        cout<< prog[col];
+     }  
+    return;}
+
