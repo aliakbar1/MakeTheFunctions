@@ -4,7 +4,7 @@
 using namespace std;
 
 //prototypes:
-void fillWith(vector <int> prog, int ninety );
+void fillWith(vector <int> &prog, int ninety );
 bool isPositive(int x);
 void printVector(vector <int>);
 
@@ -62,10 +62,10 @@ if (x>0)
 
 
 
- void printvector(vector <int> &prog)
+ void printVector(vector <int> prog )
 { for(int col=0 ; col< prog.size() ; col++)
      {   
         cout<< prog[col];
      }  
-    return;}
+}
 
